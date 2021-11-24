@@ -1,0 +1,45 @@
+audit_policy:
+  - name: Application Group Management
+    value: success, failure
+  - name: Computer Account Management
+    value: success, failure
+  - name: Other Account Management Events
+    value: success, failure    
+  - name: Security Group Management
+    value: success, failure
+  - name: User Account Management
+    value: success, failure
+  - name: Plug and Play Events
+    value: success
+  - name: Process Creation
+    value: success
+  - name: Account Lockout
+    value: success, failure
+  - name: Group Membership
+    value: success
+  - name: Logoff
+    value: success
+  - name: Logon
+    value: success, failure
+  - name: Other Logon/Logoff Events
+    value: success, failure
+  - name: Special Logon
+    value: success
+  - name: Removable Storage
+    value: success, failure
+  - name: Audit Policy Change
+    value: success, failure
+  - name: Authentication Policy Change
+    value: success
+  - name: Authorization Policy Change
+    value: success
+  - name: Sensitive Privilege Use
+    value: success, failure
+  - name: Other System Events
+    value: success, failure
+  - name: Security State Change
+    value: success
+  - name: Security System Extension
+    value: success, failure
+  - name: System Integrity
+    value: success, failure
