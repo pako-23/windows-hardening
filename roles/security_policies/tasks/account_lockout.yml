@@ -1,0 +1,14 @@
+- community.windows.win_security_policy:
+    section: System Access
+    key: LockoutBadCount
+    value: 10
+
+- community.windows.win_security_policy:
+    section: System Access
+    key: ResetLockoutCount
+    value: 15
+
+- community.windows.win_security_policy:
+    section: System Access
+    key: LockoutDuration
+    value: 15
