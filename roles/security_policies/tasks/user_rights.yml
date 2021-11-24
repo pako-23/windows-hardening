@@ -33,3 +33,74 @@
       - Administrators
       - Users
 
+- ansible.windows.win_user_right:
+    name: SeDebugPrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeRemoteShutdownPrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeLoadDriverPrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeSecurityPrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeSystemEnvironmentPrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeProfileSingleProcessPrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeRestorePrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeTakeOwnershipPrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeManageVolumePrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeCreateGlobalPrivilege
+    users:
+      - Administrators
+      - SERVICE
+      - NETWORK SERVICE
+      - LOCAL SERVICE
+- ansible.windows.win_user_right:
+    name: SeImpersonatePrivilege
+    users:
+      - Administrators
+      - SERVICE
+      - NETWORK SERVICE
+      - LOCAL SERVICE
+
+- ansible.windows.win_user_right:
+    name: SeEnableDelegationPrivilege
+    users: []
+
+- ansible.windows.win_user_right:
+    name: SeLockMemoryPrivilege
+    users: []
+
+- ansible.windows.win_user_right:
+    name: SeCreatePermanentPrivilege
+    users: []
