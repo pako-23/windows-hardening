@@ -1,0 +1,35 @@
+- ansible.windows.win_user_right:
+    name: SeTcbPrivilege
+    users: []
+
+- ansible.windows.win_user_right:
+    name: SeCreateTokenPrivilege
+    users: []
+
+- ansible.windows.win_user_right:
+    name: SeTrustedCredManAccessPrivilege
+    users: []
+
+- ansible.windows.win_user_right:
+    name: SeNetworkLogonRight
+    users:
+      - Users
+      - Administrators
+      - REMOTE INTERACTIVE LOGON
+
+- ansible.windows.win_user_right:
+    name: SeBackupPrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeCreatePagefilePrivilege
+    users:
+      - Administrators
+
+- ansible.windows.win_user_right:
+    name: SeInteractiveLogonRight
+    users:
+      - Administrators
+      - Users
+

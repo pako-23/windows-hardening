@@ -1,3 +1,5 @@
 - hosts: win
   roles:
       - security_policies
+      - audit_policies
+      - firewall
