@@ -1,0 +1,14 @@
+- name: Enable firewall for Domain, Public and Private profiles
+  community.windows.win_firewall:
+    state: enabled
+    inbound_action: Block
+    outbound_action: Allow
+    profiles:
+    - Domain
+    - Private
+    - Public
+  tags: enable_firewall
+
+- ansible.builtin.include_tasks: private.yml
+- ansible.builtin.include_tasks: public.yml
+- ansible.builtin.include_tasks: domain.yml

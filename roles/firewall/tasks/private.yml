@@ -1,0 +1,37 @@
+
+- name: Disable notification
+    win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\WindowsFirewall\Privateprofile
+    name: DisableNotifications
+    data: "1"
+    type: dword
+
+
+- name: Set log file size
+     win_regedit:
+        path: HKLM:\Software\Policies\Microsoft\Windowsfirewall\Privateprofile\Logging
+        name: "LogFileSize"
+        data: "16384"
+        type: dword
+
+
+ - name: log dropped packets
+     win_regedit:
+        path: HKLM:\Software\Policies\Microsoft\Windowsfirewall\Privateprofile\Logging
+        name: "LogDroppedPackets"
+        data: "1"
+        type: dword
+
+
+- name: log successful connections
+     win_regedit:
+        path: HKLM:\Software\Policies\Microsoft\Windowsfirewall\Privateprofile\Logging
+        name: "LogSuccessfulConnections"
+        data: "1"
+        type: dword
+
+
+#- community.windows.win_security_policy:
+#    section: Registry Values
+#    key: SOFTWARE\Policies\Microsoft\WindowsFirewall\Privateprofile\DisableNotifications
+#    value: 1
