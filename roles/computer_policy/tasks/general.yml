@@ -1,0 +1,179 @@
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft Services\AdmPwd
+    name: AdmPwdEnabled
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+    name: LocalAccountTokenFilterPolicy
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\SYSTEM\CurrentControlSet\Services\MrxSmb10
+    name: Start
+    data: 4
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
+    name: SMB1
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\kernel
+    name: DisableExceptionChainValidation 
+    data: 0 
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\SYSTEM\CurrentControlSet\Services\NetBT\Parameters
+    name: NodeType 
+    data: 2 
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest
+    name: UseLogonCredential
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\System\CurrentControlSet\Services\Tcpip6\Parameters
+    name: DisableIPSourceRouting
+    data: 2
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\System\CurrentControlSet\Services\Tcpip\Parameters
+    name: DisableIPSourceRouting
+    data: 2
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\System\CurrentControlSet\Services\Tcpip\Parameters
+    name: EnableICMPRedirect
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\System\CurrentControlSet\Services\Netbt\Parameters
+    name: NoNameReleaseOnDemand
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows NT\DNSClient
+    name: EnableMulticast
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\LanmanWorkstation
+    name: AllowInsecureGuestAuth
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\Network Connections
+    name: NC_ShowSharedAccessUI
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\WcmSvc\GroupPolicy
+    name: fBlockNonDomain
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters
+    name: AllowEncryptionOracle
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\CredentialsDelegation
+    name: AllowProtectedCreds
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions
+    name: DenyDeviceIDs
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions
+    name: DenyDeviceIDsRetroactive
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions
+    name: DenyDeviceClasses
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions
+    name: DenyDeviceClassesRetroactive
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\System\CurrentControlSet\Policies\EarlyLaunch
+    name: DriverLoadPolicy
+    data: 3
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}
+    name: NoBackgroundPolicy
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}
+    name: NoGPOListChanges
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+    name: NoWebServices
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows\Kernel DMA Protection
+    name: DeviceEnumerationPolicy
+    data: 0
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51
+    name: ACSettingIndex
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51
+    name: DCSettingIndex
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\Software\Policies\Microsoft\Windows NT\Rpc
+    name: RestrictRemoteClients
+    data: 1
+    type: dword
+
+- ansible.windows.win_regedit:
+    path: HKLM:\System\CurrentControlSet\Control\SCMConfig
+    name: EnableSvchostMitigationPolicy
+    data: 1
+    type: dword

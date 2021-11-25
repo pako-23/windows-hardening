@@ -1,0 +1,5 @@
+
+- ansible.builtin.include_tasks: general.yml
+- ansible.builtin.include_tasks: internet_explorer.yml
+- ansible.builtin.include_tasks: other_components.yml
+
